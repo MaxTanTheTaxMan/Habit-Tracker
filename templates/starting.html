@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Self Care Habit Tracker</title>
+    </head>
+
+    <body>
+        <h1>
+            Enter your desired goal
+        </h1>
+        <h2>
+            Dates start today and can be for any time. Please enter in yyyy-mm-dd format.
+        </h2>
+        <form action = "{{ url_for('goal_setup') }}" method="POST">
+            <input type = "text" name = "new_goalName" placeholder="Enter goal name"><br>
+            <input type = "text" name = "new_goalDue" placeholder="Enter goal date"><br>
+            <input type="submit" value = "Submit">
+        </form>
+
+    </body>
+</html>

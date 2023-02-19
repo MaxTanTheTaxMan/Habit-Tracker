@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Self Care Habit Tracker</title>
+    </head>
+
+    <body>
+        <form action = "{{ url_for('new_action') }}" method="POST">
+            <label for="action_pick">What action would you like to take?</label>
+            <select name="action_pick" id="action_pick">
+            <option value="dayIncrease">Next day</option>
+            <option value="addGoal">Add a new goal</option>
+            <option value="completeGoal">Complete a goal!</option>
+            </select>
+            <input type="submit" value = "Submit">
+        </form>
+
+    <pre>
+{{ plantline1 }}
+    </pre>
+    </body>
+</html>
